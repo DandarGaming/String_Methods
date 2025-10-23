@@ -49,12 +49,12 @@ public class TeamStringProgram {
   // Modify getChoice method as required
     private static int getChoice(Scanner scanner) {
         int choice = -1;
-        while (choice < 1 || choice > 5) {
+        while (choice < 1 || choice > 3) {
             try {
-                System.out.print("Enter your choice (1-5): ");
+                System.out.print("Enter your choice (1-3): ");
                 choice = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input, please enter a number between 1 and 5.");
+                System.out.println("Invalid input, please enter a number between 1 and 3.");
             }
         }
         return choice;
