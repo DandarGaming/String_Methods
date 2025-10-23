@@ -1,4 +1,4 @@
-//Insert relevant package name
+//Insert package name
 
 //Rename class using Student's Name
 public class Student1NameLibrary {
