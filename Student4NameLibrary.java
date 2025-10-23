@@ -1,9 +1,9 @@
-//Insert relevant package name
+//Insert package name
 
 //Rename class using Student's Name
 public class Student4NameLibrary {
 
-    //Insert student 1's function's below
+    //Insert student 4's function's below
 
    //Example function 
     public static int getLength(String str) {
