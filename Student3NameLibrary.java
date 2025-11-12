@@ -1,7 +1,7 @@
 //Insert package name
 
 //Rename class using Student's Name
-public class Student3NameLibrary {
+public class ShanCaulfieldLibrary {
 
     //Insert student 3's function's below
 
