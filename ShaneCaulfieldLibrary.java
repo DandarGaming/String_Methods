@@ -31,7 +31,9 @@ public class Main {
    //Function 2
 
 
-
+     String txt = "Hello World";
+     System.out.println(txt.toUpperCase());
+     System.out.println(txt.toLowerCase());
 
 
 
