@@ -5,6 +5,9 @@ public class ShanCaulfieldLibrary {
 
     //Insert student 3's function's below
 
+
+
+    
    //Example function 
     public static int getLength(String str) {
         return str.length();
