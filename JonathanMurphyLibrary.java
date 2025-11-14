@@ -17,14 +17,13 @@ public class JonathanMurphyLibrary {
         //this checks if the current char of the string is a space, if so skip it and add 1 to the count
         //then check if the list has a space, if so do the same as the string
         StringBuilder palindromeBuilder = new StringBuilder();
+        userStr = userStr.replaceAll(" ", "");
         int palindromeLen = userStr.length();
         for (int i = palindromeLen; i > 0;) {
             i -= 1;
             palindromeBuilder.append(userStr.charAt(i));
         }
         String palindrome = palindromeBuilder.toString();
-        userStr = userStr.replaceAll(" ", "");
-        palindrome = palindrome.replaceAll(" ", "");
         if (palindrome.equals(userStr)) {
             System.out.println("PALINDROME");
         }
