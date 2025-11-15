@@ -18,7 +18,23 @@ public class CountWords {
 }//end class
 
    //Function 2
+public class CountNum {
+        
+    
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Declaration for Scanner
+        System.out.println("Please input your sentence");
+        String sentence = input.nextLine();
+        int Numcount = 0;
 
+        for (char i : sentence.toCharArray()) {//for loop to check through the character array of sentence variable
+          if (Character.isDigit(i)) {
+            Numcount++;
+          }
+        }
+        System.out.println("Digits: " + Numcount);
+  }
+}
 
   //Function 3 (if applicable)
    
