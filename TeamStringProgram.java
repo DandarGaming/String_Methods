@@ -37,7 +37,7 @@ public class TeamStringProgram {
             if (endProgram == false) {
                 System.out.println("Enter the number of the operation you wish to carry out on the string.");
                 System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
-                System.out.println("Enter string here: ");
+                System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
                 switch (chosenOption) {
                     case "1" -> {
