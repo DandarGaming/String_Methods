@@ -7,6 +7,9 @@ public class TeamStringProgram {
     public static Scanner userInput = new Scanner( System.in);
     public static String userString;
     public static String chosenOption;
+    private static boolean hasOutput = false;
+    private static boolean endProgram = false;
+    private static String runAgain;
     /**
      * @param args the command line arguments
      */
@@ -14,44 +17,63 @@ public class TeamStringProgram {
         // TODO code application logic here
         System.out.println("Welcome, \n Please enter a string to be analysed.");
         do {
-            System.out.println("Enter string here: ");
+            System.out.print("Enter string here: ");
             userString = userInput.nextLine();
         } while (userString == null);
-        
-        System.out.println("Enter the number of the operation you wish to carry out on the string.");
-        System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
-        System.out.println("Enter string here: ");
-        chosenOption = userInput.nextLine();
-        switch (chosenOption) {
-            case "1" -> {
-                //Function here
-            } 
-            case "2" -> {
-                //Function here
-            }
-            case "3" -> {
-                //Function here
-            }
-            case "4" -> {
-                //Function here
-            }
-            case "5" -> {
-                //Function here
-            }
-            case "6" -> {
-                //Function here
-            }
-            case "7" -> {
-                //Function here
-            }
-            case "8" -> {
-                ReverseWords(userString);
-            }
-            case "9" -> {
-                JonathanMurphyLibrary.PalindromeChecker(userString);
+        do {
+            if (hasOutput == true) {
+                System.out.println("Do you want to end the Program \n1. Yes \n2. No\nEnter number here:");
+                runAgain = userInput.nextLine();
+                switch (runAgain) {
+                    case "1" -> {
+                        endProgram = true;
+                    }
+                    case "2" -> {
+                        endProgram = false;
+                    }
+                }
             }
             
-        }
+            if (endProgram == false) {
+                System.out.println("Enter the number of the operation you wish to carry out on the string.");
+                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
+                System.out.println("Enter string here: ");
+                chosenOption = userInput.nextLine();
+                switch (chosenOption) {
+                    case "1" -> {
+                        //Function here
+                    } 
+                    case "2" -> {
+                        //Function here
+                    }
+                    case "3" -> {
+                        //Function here
+                    }
+                    case "4" -> {
+                        //Function here
+                    }
+                    case "5" -> {
+                        //Function here
+                    }
+                    case "6" -> {
+                        //Function here
+                    }
+                    case "7" -> {
+                        //Function here
+                    }
+                    case "8" -> {
+                        ReverseWords(userString);
+                    }
+                    case "9" -> {
+                        PalindromeAndReverse.PalindromeChecker(userString);
+                    }
+
+                }
+                hasOutput = true;
+            }
+        } while (endProgram == false);
+
+        System.out.println("Goodbye");
     }
   // Modify getChoice method as required
     /*
