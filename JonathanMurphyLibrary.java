@@ -5,25 +5,22 @@ public class JonathanMurphyLibrary {
 
     //Insert student 2's function's below
 
-   //Example function 
+   //Function to check if a strin is a palindrome
     public static void PalindromeChecker(String userStr) {
-        //make a list to contain the chars from the string input
-        //Run the for loop to input the chars into the list
-        //Compare the list in reverse compared to the string in normal layout
-        //Then if the chars are the same, move on to next and check again,
-        //If different, stop and saynot a palindrome
-        //MAke sure spaces ont interfere, if they do do something about it
-        //Idea 1 to deal with spaces: make 2 if statements above the comparision if statement, 
-        //this checks if the current char of the string is a space, if so skip it and add 1 to the count
-        //then check if the list has a space, if so do the same as the string
+        //Initialises a string builder variable
         StringBuilder palindromeBuilder = new StringBuilder();
+        // clears the list of spaces as they are not considered in palindromes
         userStr = userStr.replaceAll(" ", "");
+        //gets the length of the usersinput without spaces
         int palindromeLen = userStr.length();
+        //Loops through the palindrome backwards for its length and adds each letter to the string builder
         for (int i = palindromeLen; i > 0;) {
             i -= 1;
             palindromeBuilder.append(userStr.charAt(i));
         }
+        //Create a string variable from the data in the string builder
         String palindrome = palindromeBuilder.toString();
+        //Checks if the user input and the reversed string are the same
         if (palindrome.equals(userStr)) {
             System.out.println("PALINDROME");
         }
@@ -32,9 +29,11 @@ public class JonathanMurphyLibrary {
         }
     }
 
-   //Function 2
+   //Function  to reverse the individual words in the string
     public static void ReverseWords(String userStr) { 
+        //gets the length of the users string
         int len = userStr.length();
+        //Initialise a string builer
         StringBuilder currentWord = new StringBuilder();
         //create a for loop to loop through the string
         for (int i = 0; i < len; i++) {
@@ -46,9 +45,10 @@ public class JonathanMurphyLibrary {
                     System.out.print(currentWord.charAt(x));
                 }
                 currentWord.setLength(0);
+                //Spaces is printed to seperate words
                 System.out.print(" ");
                 //A space shows that a word ended
-                //So we now loop backwards through the List and print out the chars
+                //So we now loop backwards through the currentWord List and print out the chars
                 //Then we clear the list so it can be used to generate the next word
             }
             else if (i == len - 1) {
@@ -69,7 +69,7 @@ public class JonathanMurphyLibrary {
                 
             }
         }
-        
+        //Set up the output window to print on a new line next time
         System.out.println("");
     }
 
