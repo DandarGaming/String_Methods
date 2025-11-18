@@ -1,13 +1,8 @@
 //Insert package name
-
+import java.util.HashMap;
 //Rename class using Student's Name
 public class ShaneCaulfieldLibrary {
-
     //Insert student 3's function's below
-
-    import java.util.HashMap;
-
-public class Main {
   public static void main(String[] args) {
     String text = "banana";
     HashMap<Character, Integer> freq = new HashMap<>();
@@ -21,7 +16,6 @@ public class Main {
   }
 }
 
-    
     
    //Example function 
     public static int getLength(String str) {
