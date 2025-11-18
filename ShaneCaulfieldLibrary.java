@@ -42,7 +42,7 @@ public class Main {
 
   //Function 3 (if applicable)
 
-public class Shane { 
+ 
 
     public static void main(String[] args) {
         String input1 = "example function";
