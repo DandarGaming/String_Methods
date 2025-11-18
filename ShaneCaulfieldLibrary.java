@@ -45,8 +45,10 @@ public class Main {
 public class Shane { 
 
     public static void main(String[] args) {
-        String input1 = "
+        String input1 = "example function";
 
+        System.out.println(imput1);
+        System.out.println(imput1.toUpperCase()); 
       }
 
   {
