@@ -3,7 +3,7 @@ import java.util.HashMap;
 //Rename class using Student's Name
 public class ShaneCaulfieldLibrary {
     //Insert student 3's function's below
-  public static void main(String[] args) {//change this into a function would look like this "public static void Example(Input 1,Input 2)"
+  public static void Example(String[] args) {//change this into a function would look like this "public static void Example(Input 1,Input 2)"
     String text = "banana"; // Remove this as we need to use the user input (userStr) See main java file
     HashMap<Character, Integer> freq = new HashMap<>();
 
