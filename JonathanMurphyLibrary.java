@@ -73,7 +73,14 @@ public class JonathanMurphyLibrary {
         System.out.println("");
     }
 
-  //Function 3 (if applicable)
-   
+  //Function to reverse the entire string
+    public static void ReverseString(String userStr) {
+        int len = userStr.length();
+        for (int i = len; i > 0;) {
+            i -= 1;
+            System.out.print(userStr.charAt(i));
+        }
+        System.out.println(" ");
+    }
     
 } //end class 
