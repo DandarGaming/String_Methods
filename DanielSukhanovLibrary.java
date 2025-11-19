@@ -6,7 +6,7 @@ public class DanielSukhanovLibrary {
     //Insert student 1's function's below
     //Function 1(Count Words)
 public static void CountWords(String userStr) {
-        userStr = userStr.repalceAll(" ","");
+        userStr = userStr.replaceAll(" ","");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
         System.out.println("Please input your sentence"); // Is this input needed as you already get the users input from userStr and then never use it
         String sentence = input.nextLine();
