@@ -8,7 +8,7 @@ public class DanielSukhanovLibrary {
 public static void CountWords(String userStr) {
         userStr = userStr.repalceAll(" ","");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
-        System.out.println("Please input your sentence");
+        System.out.println("Please input your sentence"); // Is this input needed as you already get the users input from userStr and then never use it
         String sentence = input.nextLine();
        int Words = sentence.split("\\s").length;
        System.out.println(Words);
