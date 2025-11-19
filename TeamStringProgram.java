@@ -1,5 +1,6 @@
 //Insert Relevant Package Name
 import static JonathanMurphyLibrary.ReverseWords;
+import static JonathanMurphyLibrary.ReverseString;
 import static DanielSukhanovLibrary.CountWords;
 import static DanielSukhanovLibrary.CountNum;
 import java.util.Scanner;
@@ -46,7 +47,7 @@ public class TeamStringProgram {
                         //Function here
                     } 
                     case "2" -> {
-                        //Function here
+                        ReverseString(userString)
                     }
                     case "3" -> {
                         //Function here
