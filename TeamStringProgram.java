@@ -44,25 +44,25 @@ public class TeamStringProgram {
                 chosenOption = userInput.nextLine();
                 switch (chosenOption) {
                     case "1" -> {
-                        //Function here
+                        CountVowel(userString);
                     } 
                     case "2" -> {
-                        ReverseString(userString)
+                        ReverseString(userString);
                     }
                     case "3" -> {
-                        //Function here
+                        ConvertUpper(userString);
                     }
                     case "4" -> {
                         //Function here
                     }
                     case "5" -> {
-                        CountNum(userString) 
+                        CountNum(userString);
                     }
                     case "6" -> {
                         //Function here
                     }
                     case "7" -> {
-                        CountWords(userString)
+                        CountWords(userString);
                     }
                     case "8" -> {
                         ReverseWords(userString);
