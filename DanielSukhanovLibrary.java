@@ -8,7 +8,6 @@ public class DanielSukhanovLibrary {
 public static void CountWords(String userStr) {
         userStr = userStr.replaceAll(" ","");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
-        System.out.println("Please input your sentence"); // Is this input needed as you already get the users input from userStr and then never use it
         String sentence = input.nextLine();
        int Words = sentence.split("\\s").length;
        System.out.println(Words);
@@ -20,7 +19,6 @@ public static void CountWords(String userStr) {
 public static void CountNum(String userStr) {
         userStr = userStr.replaceAll(" ", "");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
-        System.out.println("Please input your sentence");
         String sentence = input.nextLine();
         int Numcount = 0;// sets the integer variable Numcount to zero 
 
@@ -36,7 +34,6 @@ public static void CountNum(String userStr) {
     public static  void CountVowel(String userStr) {
         userStr = userStr.replaceAll(" ", "");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
-        System.out.println("Please input your sentence");
         String sentence = input.nextLine();
         int vowel = 0;
     
