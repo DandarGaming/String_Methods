@@ -1,1 +1,1 @@
-Run the main StringMethodMenu file to use this code.
+Run the main TeamStringProgram.java file to use this code.
