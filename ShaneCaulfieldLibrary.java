@@ -36,7 +36,7 @@ public class ShaneCaulfieldLibrary {
 
   
 
-     //Function 2 
+     //Function 1
 
     public static void main(String[] args) {
         String input1 = "example function";
@@ -47,7 +47,8 @@ public class ShaneCaulfieldLibrary {
 
   {
 
-
+     //Function 2 
+      
     public static void main(String){} args {
 
         String s="Number of Characters to count";
