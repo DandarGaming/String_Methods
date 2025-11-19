@@ -3,6 +3,7 @@ import static JonathanMurphyLibrary.ReverseWords;
 import static JonathanMurphyLibrary.ReverseString;
 import static DanielSukhanovLibrary.CountWords;
 import static DanielSukhanovLibrary.CountNum;
+import static JonathanMurphyLibrary.PalindromeChecker;
 import java.util.Scanner;
 
 
@@ -68,7 +69,7 @@ public class TeamStringProgram {
                         ReverseWords(userString);
                     }
                     case "9" -> {
-                        PalindromeAndReverse.PalindromeChecker(userString);
+                        PalindromeChecker(userString);
                     }
 
                 }
