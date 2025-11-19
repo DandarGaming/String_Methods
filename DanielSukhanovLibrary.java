@@ -4,6 +4,7 @@ import java.util.Scanner; // imports Scanner library
 public class DanielSukhanovLibrary {
 
     //Insert student 1's function's below
+    //Function 1(Count Words)
 public static void CountWords(String userStr) {
         userStr = userStr.repalceAll(" ","");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
@@ -13,9 +14,9 @@ public static void CountWords(String userStr) {
        System.out.println(Words);
 
     
-}//end class
+}//end function
 
-   //Function 2
+   //Function 2 (Count Numbers)
 public static void CountNum(String userStr) {
         userStr = userStr.replaceAll(" ", "");
         Scanner input = new Scanner(System.in); // Declaration for Scanner
@@ -29,11 +30,23 @@ public static void CountNum(String userStr) {
           }
         }
         System.out.println("Digits: " + Numcount);
-}
+}//end function
 
-  //Function 3 (if applicable)
-   
+  //Function 3 (Count Vowels)
+    public static  void CountVowel(String userStr) {
+        userStr = userStr.replaceAll(" ", "");
+        Scanner input = new Scanner(System.in); // Declaration for Scanner
+        System.out.println("Please input your sentence");
+        String sentence = input.nextLine();
+        int vowel = 0;
     
+        for (char c : text.toLowerCase().toCharArray()) {
+          if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            vowel++;
+          }
+        }
+    
+    System.out.println("Vowels: " + count);  
+    } //end function
 } //end class 
 
-//TODO: CHANGE THE CLASSES INTO FUNCTIONS!!!!
