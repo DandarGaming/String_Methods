@@ -48,6 +48,26 @@ public class ShaneCaulfieldLibrary {
   {
 
 
+    public static void main(String){} args {
+
+        String s="Number of Characters to count";
+
+        int totalcount=s.length(); // total len 1
+
+        int totalcount_afterRemove= s.replace("a", "").length(); // total len after remvoing a's
+
+        int count=totalcount-totalcount_afterRemove
+
+        Sustem.out.println("Number occurances of a is:"+count);
+
+
+        
+        
+
+
+    }
+  {
+        
 
 
     
