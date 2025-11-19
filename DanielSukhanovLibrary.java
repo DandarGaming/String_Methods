@@ -7,7 +7,6 @@ public class DanielSukhanovLibrary {
     //Function 1(Count Words)
 public static void CountWords(String userStr) {
         userStr = userStr.replaceAll(" ","");
-        Scanner input = new Scanner(System.in); // Declaration for Scanner
         String sentence = input.nextLine();  // You are still declaring and accepting a scanner input when you no longer have a input prompt, is this needed for the code? You still are using the input while not using the userStr which is passed to the function from the main menu file.
        int Words = sentence.split("\\s").length;
        System.out.println(Words);
@@ -18,7 +17,6 @@ public static void CountWords(String userStr) {
    //Function 2 (Count Numbers)
 public static void CountNum(String userStr) {
         userStr = userStr.replaceAll(" ", "");
-        Scanner input = new Scanner(System.in); // Declaration for Scanner
         String sentence = input.nextLine();
         int Numcount = 0;// sets the integer variable Numcount to zero 
 
@@ -33,7 +31,6 @@ public static void CountNum(String userStr) {
   //Function 3 (Count Vowels)
     public static  void CountVowel(String userStr) {
         userStr = userStr.replaceAll(" ", "");
-        Scanner input = new Scanner(System.in); // Declaration for Scanner
         String sentence = input.nextLine();
         int vowel = 0;
     
