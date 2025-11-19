@@ -17,12 +17,12 @@ public class ShaneCaulfieldLibrary {
 }
 
     
-   //Example function 
+   // function 1
     public static int getLength(String str) { 
         return str.length();
     }
 
-   //Function 2
+   
 
 
      String txt = "Hello World";
@@ -34,9 +34,9 @@ public class ShaneCaulfieldLibrary {
 
 
 
-  //Function 3 (if applicable)
+  
 
- 
+     //Function 2 
 
     public static void main(String[] args) {
         String input1 = "example function";
