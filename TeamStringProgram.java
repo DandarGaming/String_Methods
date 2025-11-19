@@ -4,6 +4,10 @@ import static JonathanMurphyLibrary.ReverseString;
 import static DanielSukhanovLibrary.CountWords;
 import static DanielSukhanovLibrary.CountNum;
 import static JonathanMurphyLibrary.PalindromeChecker;
+import static ShaneCaulfieldLibrary.ConvertUpper;
+//placeholder import static ShaneCaulfieldLibrary.;
+//placeholder import static ShaneCaulfieldLibrary.;
+//placeholder import static DylanSmithLibrary.;
 import java.util.Scanner;
 
 
