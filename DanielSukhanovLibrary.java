@@ -7,7 +7,7 @@ public class DanielSukhanovLibrary {
     //Function 1(Count Words)
 public static void CountWords(String userStr) {
         userStr = userStr.replaceAll(" ","");
-        String sentence = usrStr; 
+        String sentence = userStr; 
        int Words = sentence.split("\\s").length;
        System.out.println(Words);
 
@@ -17,7 +17,7 @@ public static void CountWords(String userStr) {
    //Function 2 (Count Numbers)
 public static void CountNum(String userStr) {
         userStr = userStr.replaceAll(" ", "");
-        String sentence = usrStr;
+        String sentence = userStr;
         int Numcount = 0;// sets the integer variable Numcount to zero 
 
         for (char i : sentence.toCharArray()) {//for loop to check through the character array of sentence variable
@@ -31,7 +31,7 @@ public static void CountNum(String userStr) {
   //Function 3 (Count Vowels)
     public static  void CountVowel(String userStr) {
         userStr = userStr.replaceAll(" ", "");
-        String sentence = usrStr;
+        String sentence = userStr;
         int vowel = 0;
     
         for (char c : text.toLowerCase().toCharArray()) {
