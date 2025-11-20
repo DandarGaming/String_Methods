@@ -1,11 +1,11 @@
 //Insert package name
-
+import java.util.Scanner; // imports Scanner library
 //Rename class using Student's Name
 public class DylanSmithLibrary {
 
     //generate acronym
     public static String generateAcronym(String text) {
-        String[] words = text.split(" "); // splitting text ino individual words using ( ) to seperate
+        String[] words = text.split(" "); // splitting text into individual words using
         String result = ""; // empty string to store acronym 
         String ignore = {"and", "of", "the", "an", "in", "on"}; // ignoring as it will add extra letter to acronym
         for (String word : words) {  //loop through words
