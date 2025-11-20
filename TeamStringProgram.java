@@ -7,7 +7,7 @@ import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
 //placeholder import static ShaneCaulfieldLibrary.;
 //placeholder import static ShaneCaulfieldLibrary.;
-//placeholder import static DylanSmithLibrary.;
+import static 
 import java.util.Scanner;
 
 
