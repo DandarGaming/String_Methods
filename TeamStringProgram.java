@@ -6,7 +6,7 @@ import static DanielSukhanovLibrary.CountNum;
 import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
 import static DylanSmithLibrary.getLength;
-import static  DylanSmithLibrary.generateAcronym.;
+import static DylanSmithLibrary.generateAcronym.;
 import java.util.Scanner;
 
 
