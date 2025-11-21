@@ -25,13 +25,13 @@ public static void CountNum(String userStr) {//CountsNum function that utilises 
             Numcount++;//Numcount + 1
           }
         }
-        System.out.println("Digits: " + Numcount);
+        System.out.println("Digits: " + Numcount);//Outputs the amount of digits within a sentence using "Digits: " and concatonates the Numcount
 }//end function
 
   //Function 3 (Count Vowels)
     public static  void CountVowel(String userStr) {//CountVowel function that utilises userStr
         userStr = userStr.replaceAll(" ", "");
-        String sentence = userStr;
+        String sentence = userStr; //sentence being declared to userStr
         int vowel = 0;//Declares vowel int variable as 0
     
         for (char c : text.toLowerCase().toCharArray()) {//for loop to loop through the inputted userStr
