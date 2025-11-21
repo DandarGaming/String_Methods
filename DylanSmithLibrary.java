@@ -33,6 +33,9 @@ public class DylanSmithLibrary {
 
    //Counting characters in a string
 public static String countCharacters(String text) {
+    String result = "";
+   String ignore = {" "}
+       
     
 
 
