@@ -7,7 +7,7 @@ import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
 import static DylanSmithLibrary.getLength;
 import static  DylanSmithLibrary.generateAcronym.;
-import java.util.Scanner;//imports the scanner tool
+import java.util.Scanner;
 
 
 public class TeamStringProgram {
@@ -24,8 +24,8 @@ public class TeamStringProgram {
         //We do check to make sure its a valid string and reprompt the user if not
         do {
             System.out.print("Enter string here: ");
-            userString = userInput.nextLine();//scanner scanning for user input
-        } while (userString == null);
+            userString = userInput.nextLine();
+        } while (userString.trim().isEmpty());
         //We make a while loop that can run the code until the user wishes to quit
         do {
             //We check if the user has aready done an operation before prompting them with the quit menu
@@ -46,37 +46,39 @@ public class TeamStringProgram {
             if (endProgram == false) {
                 //We prompt the user to enter the number of the operation they wish to carry out on their string 
                 System.out.println("Enter the number of the operation you wish to carry out on the string.");
-                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");//menu output of the possible functions
+                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
                 System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
                 //once we have an option, we check what case it matches and launch the respective function
                 switch (chosenOption) {
                     case "1" -> {
-                        CountVowel(userString);// Function from DanielSukhanovLibrary.java
+                        CountVowel(userString);
                     } 
                     case "2" -> {
-                        ReverseString(userString);// Function from JonathanMurphyLibrary.java
+                        ReverseString(userString);
                     }
                     case "3" -> {
-                        ConvertUpper(userString);// Function from ShanCaulfieldLibrary.java
+                        ConvertUpper(userString);
                     }
                     case "4" -> {
-                        System.out.println("Your acronym is " + generateAcronym(userString));//// Function from DylanSmithLibrary.java
+                        System.out.println("Your acronym is " + generateAcronym(userString));
+                        
                     }
                     case "5" -> {
-                        CountNum(userString);// Function from DanielSukhanovLibrary.java
+                        CountWords(userString);
+                        
                     }
                     case "6" -> {
-                        //Function here
+                        System.out.println("There are " + getLength(userString) + " characters");
                     }
                     case "7" -> {
-                        CountWords(userString);// Function from DanielSukhanovLibrary.java
+                        CountNum(userString);
                     }
                     case "8" -> {
-                        ReverseWords(userString);// Function from JonathanMurphyLibrary.java
+                        ReverseWords(userString);
                     }
                     case "9" -> {
-                        PalindromeChecker(userString);// Function from JonathanMurphyLibrary.java
+                        PalindromeChecker(userString);
                     }
 
                 }
@@ -103,3 +105,4 @@ public class TeamStringProgram {
     } //end main 
     */
 } //end class
+
