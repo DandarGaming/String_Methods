@@ -36,6 +36,7 @@ public static String countCharacters(String text) {
     String result = "";
    String ignore = {" "}
        return result;
+} 
        
     
 
