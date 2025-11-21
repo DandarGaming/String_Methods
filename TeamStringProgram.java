@@ -12,23 +12,24 @@ import java.util.Scanner;
 
 
 public class TeamStringProgram {
+    //This initailizes all are variables and makes them global variables
     public static Scanner userInput = new Scanner( System.in);
-    public static String userString;
-    public static String chosenOption;
-    private static boolean hasOutput = false;
-    private static boolean endProgram = false;
-    private static String runAgain;
+    public static String userString, chosenOption, runAgain;;
+    private static boolean hasOutput = false, endProgram = false;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //We prompt the user to enter the string that will be used in all the operations
         System.out.println("Welcome, \n Please enter a string to be analysed.");
+        //We do check to make sure its a valid string and reprompt the user if not
         do {
             System.out.print("Enter string here: ");
             userString = userInput.nextLine();
         } while (userString == null);
+        //We make a while loop that can run the code until the user wishes to quit
         do {
+            //We check if the user has aready done an operation before prompting them with the quit menu
             if (hasOutput == true) {
                 System.out.println("Do you want to end the Program \n1. Yes \n2. No\nEnter number here:");
                 runAgain = userInput.nextLine();
@@ -42,11 +43,14 @@ public class TeamStringProgram {
                 }
             }
             
+            //We run this as long as the user did not prompt the program to quit
             if (endProgram == false) {
+                //We prompt the user to enter the number of the operation they wish to carry out on their string 
                 System.out.println("Enter the number of the operation you wish to carry out on the string.");
                 System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
                 System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
+                //once we have an option, we check what case it matches and launch the respective function
                 switch (chosenOption) {
                     case "1" -> {
                         CountVowel(userString);
@@ -77,6 +81,7 @@ public class TeamStringProgram {
                     }
 
                 }
+                //We update the program to know that is has passed the loop atleast once
                 hasOutput = true;
             }
         } while (endProgram == false);
