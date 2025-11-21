@@ -7,7 +7,7 @@ public class DylanSmithLibrary {
     public static String generateAcronym(String text) {
         String[] words = text.split(" "); // splitting text into individual words using
         String result = ""; // empty string to store acronym 
-        String ignore = {"and", "of", "the", "an", "in", "on"}; // ignoring as it will add extra letter to acronym
+        String[] ignore = {"and", "of", "the", "an", "in", "on"}; // ignoring as it will add extra letter to acronym
         for (String word : words) {  //loop through words
             if (!word.isEmpty()) {  //skip extra space
                 boolean skip = false; // to check for ignored words 
@@ -24,7 +24,6 @@ public class DylanSmithLibrary {
         }
         return result;
     }
-}
 
    //Counting characters in a string
     public static int getLength(String str) {
