@@ -5,16 +5,10 @@ public class ShaneCaulfieldLibrary {
     //Insert student 3's function's below
   public static void ConvertUpper(String userStr) {
    userStr = userStr.replaceAll(" ","");
-    HashMap<Character, Integer> freq = new HashMap<>();
-
-    for (char c : userStr.toCharArray()) {
-      freq.put(c, freq.getOrDefault(c, 0) + 1);
-    }
-
-    System.out.println(freq);
-      String txt = "Hello World";
-     System.out.println(txt.toUpperCase());
-     System.out.println(txt.toLowerCase());
+    String sentence = userStr; //sentence being declared to userStr
+    System.out.println(sentence.toUpperCase());//outputs the uppercase of the sentence variable
+ 
+   
 
     // Output: {a=3, b=1, n=2}
   }
