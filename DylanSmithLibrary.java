@@ -31,7 +31,9 @@ public class DylanSmithLibrary {
         return str.length();
     }
 
-   //Function 2
+   //Counting characters in a string
+public static String countCharacters(String text) {
+    
 
 
   //Function 3 (if applicable)
