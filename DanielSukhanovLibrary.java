@@ -36,7 +36,7 @@ public static void CountNum(String userStr) {//CountsNum function that utilises 
     
         for (char c : text.toLowerCase().toCharArray()) {//for loop to loop through the inputted userStr
           if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {//checks if the c variable index is a vowel by using the if statement and the "or" function
-            vowel++;
+            vowel++;//vowel + 1
           }
         }
     
