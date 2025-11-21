@@ -62,7 +62,7 @@ public class TeamStringProgram {
                         ConvertUpper(userString);
                     }
                     case "4" -> {
-                        generateAcronym(userString);
+                        System.out.println("Your acronym is " + generateAcronym(userString));
                     }
                     case "5" -> {
                         CountNum(userString);
