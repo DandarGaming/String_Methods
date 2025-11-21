@@ -58,7 +58,7 @@ public class TeamStringProgram {
                         ConvertUpper(userString);
                     }
                     case "4" -> {
-                        //Function here
+                        GenerateAcrynom(userString);
                     }
                     case "5" -> {
                         CountNum(userString);
