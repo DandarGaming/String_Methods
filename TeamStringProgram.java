@@ -7,7 +7,7 @@ import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
 //placeholder import static ShaneCaulfieldLibrary.;
 //placeholder import static ShaneCaulfieldLibrary.;
-import static  DylanSmithLibrary.GenerateAcronym.;
+import static  DylanSmithLibrary.generateAcronym.;
 import java.util.Scanner;
 
 
@@ -58,7 +58,7 @@ public class TeamStringProgram {
                         ConvertUpper(userString);
                     }
                     case "4" -> {
-                        GenerateAcrynom(userString);
+                        generateAcronym(userString);
                     }
                     case "5" -> {
                         CountNum(userString);
