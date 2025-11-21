@@ -12,6 +12,10 @@ public class ShaneCaulfieldLibrary {
     }
 
     System.out.println(freq);
+      String txt = "Hello World";
+     System.out.println(txt.toUpperCase());
+     System.out.println(txt.toLowerCase());
+
     // Output: {a=3, b=1, n=2}
   }
 }
@@ -24,10 +28,6 @@ public class ShaneCaulfieldLibrary {
 
    
 
-
-     String txt = "Hello World";
-     System.out.println(txt.toUpperCase());
-     System.out.println(txt.toLowerCase());
 
 
 
