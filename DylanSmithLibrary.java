@@ -26,22 +26,10 @@ public class DylanSmithLibrary {
     }
 }
 
-   //Example function 
+   //Counting characters in a string
     public static int getLength(String str) {
         return str.length();
     }
 
-   //Counting characters in a string
-public static String countCharacters(String text) {
-    String result = "";
-   String ignore = {" "}
-       return result;
-} 
-       
-    
-
-
-  //Function 3 (if applicable)
-   
-    
+  
 } //end class 
