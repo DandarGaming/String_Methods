@@ -40,7 +40,7 @@ public static void CountNum(String userStr) {//CountsNum function that utilises 
           }
         }
     
-    System.out.println("Vowels: " + count);  //Outputs the amount of Vowels and also concatonates the count variable
+    System.out.println("Vowels: " + vowel);  //Outputs the amount of Vowels and also concatonates the count variable
     } //end function
 } //end class 
 
