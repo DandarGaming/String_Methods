@@ -6,9 +6,9 @@ import static DanielSukhanovLibrary.CountNum;
 import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
 //placeholder import static ShaneCaulfieldLibrary.;
-//placeholder import static ShaneCaulfieldLibrary.;
+//placeholder import static DylanSmithLibrary.;
 import static  DylanSmithLibrary.generateAcronym.;
-import java.util.Scanner;
+import java.util.Scanner;//imports the scanner tool
 
 
 public class TeamStringProgram {
@@ -25,7 +25,7 @@ public class TeamStringProgram {
         //We do check to make sure its a valid string and reprompt the user if not
         do {
             System.out.print("Enter string here: ");
-            userString = userInput.nextLine();
+            userString = userInput.nextLine();//scanner scanning for user input
         } while (userString == null);
         //We make a while loop that can run the code until the user wishes to quit
         do {
@@ -47,37 +47,37 @@ public class TeamStringProgram {
             if (endProgram == false) {
                 //We prompt the user to enter the number of the operation they wish to carry out on their string 
                 System.out.println("Enter the number of the operation you wish to carry out on the string.");
-                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
+                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");//menu output of the possible functions
                 System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
                 //once we have an option, we check what case it matches and launch the respective function
                 switch (chosenOption) {
                     case "1" -> {
-                        CountVowel(userString);
+                        CountVowel(userString);// Function from DanielSukhanovLibrary.java
                     } 
                     case "2" -> {
-                        ReverseString(userString);
+                        ReverseString(userString);// Function from JonathanMurphyLibrary.java
                     }
                     case "3" -> {
-                        ConvertUpper(userString);
+                        ConvertUpper(userString);// Function from ShanCaulfieldLibrary.java
                     }
                     case "4" -> {
-                        System.out.println("Your acronym is " + generateAcronym(userString));
+                        System.out.println("Your acronym is " + generateAcronym(userString));//// Function from DylanSmithLibrary.java
                     }
                     case "5" -> {
-                        CountNum(userString);
+                        CountNum(userString);// Function from DanielSukhanovLibrary.java
                     }
                     case "6" -> {
                         //Function here
                     }
                     case "7" -> {
-                        CountWords(userString);
+                        CountWords(userString);// Function from DanielSukhanovLibrary.java
                     }
                     case "8" -> {
-                        ReverseWords(userString);
+                        ReverseWords(userString);// Function from JonathanMurphyLibrary.java
                     }
                     case "9" -> {
-                        PalindromeChecker(userString);
+                        PalindromeChecker(userString);// Function from JonathanMurphyLibrary.java
                     }
 
                 }
