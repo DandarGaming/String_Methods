@@ -34,13 +34,13 @@ public static void CountNum(String userStr) {
         String sentence = userStr;
         int vowel = 0;
     
-        for (char c : text.toLowerCase().toCharArray()) {
+        for (char c : text.toLowerCase().toCharArray()) { //text does not exist as a variable
           if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
             vowel++;
           }
         }
     
-    System.out.println("Vowels: " + count);  
+    System.out.println("Vowels: " + count);  // count does not exist as a variable 
     } //end function
 } //end class 
 
