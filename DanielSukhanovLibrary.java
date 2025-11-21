@@ -6,7 +6,6 @@ public class DanielSukhanovLibrary {
     //Insert student 1's function's below
     //Function 1(Count Words)
 public static void CountWords(String userStr) {//CountWords Function that utilises userStr
-        userStr = userStr.replaceAll(" ","");
         String sentence = userStr; //sentence being declared to userStr
        int Words = sentence.split("\\s").length;
        System.out.println(Words);//Outputs Words Variable
