@@ -5,8 +5,7 @@ import static DanielSukhanovLibrary.CountWords;
 import static DanielSukhanovLibrary.CountNum;
 import static JonathanMurphyLibrary.PalindromeChecker;
 import static ShaneCaulfieldLibrary.ConvertUpper;
-//placeholder import static ShaneCaulfieldLibrary.;
-//placeholder import static DylanSmithLibrary.;
+import static DylanSmithLibrary.countCharacters;
 import static  DylanSmithLibrary.generateAcronym.;
 import java.util.Scanner;//imports the scanner tool
 
