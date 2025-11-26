@@ -1,6 +1,3 @@
-//Insert package name
-
-//Rename class using Student's Name
 public class JonathanMurphyLibrary {
 
     //Insert student 2's function's below
@@ -10,7 +7,7 @@ public class JonathanMurphyLibrary {
         //Initialises a string builder variable
         StringBuilder palindromeBuilder = new StringBuilder();
         // clears the list of spaces as they are not considered in palindromes
-        userStr = userStr.replaceAll(" ", "");
+        userStr = userStr.replaceAll(" ", "").toLowerCase();
         //gets the length of the usersinput without spaces
         int palindromeLen = userStr.length();
         //Loops through the palindrome backwards for its length and adds each letter to the string builder
@@ -22,16 +19,17 @@ public class JonathanMurphyLibrary {
         String palindrome = palindromeBuilder.toString();
         //Checks if the user input and the reversed string are the same
         if (palindrome.equals(userStr)) {
-            System.out.println("PALINDROME");
+            System.out.println("Your string is a palindrome");
         }
         else {
-            System.out.println("No palindrome");
+            System.out.println("Your string is not a palindrome");
         }
     }
 
    //Function  to reverse the individual words in the string
     public static void ReverseWords(String userStr) { 
         //gets the length of the users string
+        System.out.println("Each of your words reversed looks like this: ");
         int len = userStr.length();
         //Initialise a string builer
         StringBuilder currentWord = new StringBuilder();
@@ -75,6 +73,7 @@ public class JonathanMurphyLibrary {
 
   //Function to reverse the entire string
     public static void ReverseString(String userStr) {
+        System.out.println("Your string reveresed looks like this: ");
         int len = userStr.length();
         for (int i = len; i > 0;) {
             i -= 1;
