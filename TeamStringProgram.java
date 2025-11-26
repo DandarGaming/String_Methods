@@ -20,7 +20,9 @@ public class TeamStringProgram {
      */
     public static void main(String[] args) {
         //We prompt the user to enter the string that will be used in all the operations
-        System.out.println("Welcome, \n Please enter a string to be analysed.");
+        System.out.println("""
+                           Welcome, 
+                           Please enter a string to be analysed.""");
         //We do check to make sure its a valid string and reprompt the user if not
         do {
             System.out.print("Enter string here: ");
@@ -30,7 +32,11 @@ public class TeamStringProgram {
         do {
             //We check if the user has aready done an operation before prompting them with the quit menu
             if (hasOutput == true) {
-                System.out.println("Do you want to end the Program \n1. Yes \n2. No\nEnter number here:");
+                System.out.println("""
+                                   Do you want to end the Program 
+                                   1. Yes 
+                                   2. No
+                                   Enter number here:""");
                 runAgain = userInput.nextLine();
                 switch (runAgain) {
                     case "1" -> {
@@ -45,8 +51,18 @@ public class TeamStringProgram {
             //We run this as long as the user did not prompt the program to quit
             if (endProgram == false) {
                 //We prompt the user to enter the number of the operation they wish to carry out on their string 
-                System.out.println("Enter the number of the operation you wish to carry out on the string.");
-                System.out.println("1. Count Vowels \n2. Reverse the String \n3. Convert String to uppercase \n4. Generate an acronym \n5. Count the number of words \n6. Count the number of characters \n7. count the number of digits \n8. Reverse each word in the string \n9. Check if the string is a palindrome");
+                System.out.println("Enter the number of the operation you wish"
+                        + " to carry out on the string.");
+                System.out.println("""
+                                   1. Count Vowels 
+                                   2. Reverse the String 
+                                   3. Convert String to uppercase 
+                                   4. Generate an acronym 
+                                   5. Count the number of words 
+                                   6. Count the number of characters 
+                                   7. count the number of digits 
+                                   8. Reverse each word in the string 
+                                   9. Check if the string is a palindrome""");
                 System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
                 //once we have an option, we check what case it matches and launch the respective function
@@ -61,7 +77,8 @@ public class TeamStringProgram {
                         ConvertUpper(userString);
                     }
                     case "4" -> {
-                        System.out.println("Your acronym is " + generateAcronym(userString));
+                        System.out.println("Your acronym is " 
+                                + generateAcronym(userString));
                         
                     }
                     case "5" -> {
@@ -69,7 +86,8 @@ public class TeamStringProgram {
                         
                     }
                     case "6" -> {
-                        System.out.println("There are " + getLength(userString) + " characters");
+                        System.out.println("There are " 
+                                + getLength(userString) + " characters");
                     }
                     case "7" -> {
                         CountNum(userString);
@@ -105,4 +123,5 @@ public class TeamStringProgram {
     } //end main 
     */
 } //end class
+
 
