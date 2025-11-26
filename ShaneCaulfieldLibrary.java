@@ -4,7 +4,6 @@ import java.util.HashMap;
 public class ShaneCaulfieldLibrary {
     //Insert student 3's function's below
   public static void ConvertUpper(String userStr) {
-   userStr = userStr.replaceAll(" ","");
     String sentence = userStr; //sentence being declared to userStr
     System.out.println(sentence.toUpperCase());//outputs the uppercase of the sentence variable
  
