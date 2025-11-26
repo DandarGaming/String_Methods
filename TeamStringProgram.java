@@ -14,7 +14,7 @@ public class TeamStringProgram {
     //This initailizes all are variables and makes them global variables
     public static Scanner userInput = new Scanner( System.in);
     public static String userString, chosenOption, runAgain;;
-    private static boolean hasOutput = false, endProgram = false;
+    private static boolean endProgram = false;
     /**
      * @param args the command line arguments
      */
@@ -29,27 +29,8 @@ public class TeamStringProgram {
             userString = userInput.nextLine();
         } while (userString.trim().isEmpty());
         //We make a while loop that can run the code until the user wishes to quit
-        do {
-            //We check if the user has aready done an operation before prompting them with the quit menu
-            if (hasOutput == true) {
-                System.out.println("""
-                                   Do you want to end the Program 
-                                   1. Yes 
-                                   2. No
-                                   Enter number here:""");
-                runAgain = userInput.nextLine();
-                switch (runAgain) {
-                    case "1" -> {
-                        endProgram = true;
-                    }
-                    case "2" -> {
-                        endProgram = false;
-                    }
-                }
-            }
-            
+        do {            
             //We run this as long as the user did not prompt the program to quit
-            if (endProgram == false) {
                 //We prompt the user to enter the number of the operation they wish to carry out on their string 
                 System.out.println("Enter the number of the operation you wish"
                         + " to carry out on the string.");
@@ -100,9 +81,22 @@ public class TeamStringProgram {
                     }
 
                 }
-                //We update the program to know that is has passed the loop atleast once
-                hasOutput = true;
-            }
+                //We check if the user has aready done an operation before prompting them with the quit menu
+                System.out.println("""
+                                   Do you want to end the Program 
+                                   1. Yes 
+                                   2. No
+                                   Enter number here:""");
+                runAgain = userInput.nextLine();
+                switch (runAgain) {
+                    case "1" -> {
+                        endProgram = true;
+                    }
+                    case "2" -> {
+                        endProgram = false;
+                    }
+                }
+                
         } while (endProgram == false);
 
         System.out.println("Goodbye");
@@ -123,5 +117,6 @@ public class TeamStringProgram {
     } //end main 
     */
 } //end class
+
 
 
