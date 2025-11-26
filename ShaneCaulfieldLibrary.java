@@ -53,7 +53,7 @@ public class ShaneCaulfieldLibrary {
 
         int count=totalcount-totalcount_afterRemove
 
-        Sustem.out.println("Number occurances of a is:"+count);
+        System.out.println("Number occurances of a is:"+count);
 
 
         
