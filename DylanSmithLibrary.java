@@ -26,8 +26,8 @@ public class DylanSmithLibrary {
     }
 
    //Counting characters in a string
-    public static int getLength(String str) {
-        return str.length();
+    public static int getLength(String str) { // getting numbers of characters 
+        return str.length(); //returns result 
     }
 
   
