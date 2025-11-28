@@ -44,6 +44,7 @@ public class TeamStringProgram {
                                    7. count the number of digits 
                                    8. Reverse each word in the string 
                                    9. Check if the string is a palindrome""");
+                System.out.println("Type any other number to exit the menu");
                 System.out.print("Enter the option number here: ");
                 chosenOption = userInput.nextLine();
                 //once we have an option, we check what case it matches and launch the respective function
